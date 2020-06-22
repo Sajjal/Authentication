@@ -1,0 +1,24 @@
+<center>
+  <br />
+  <h2>Signup!</h2>
+  <br />
+  <%-include('_errors')%>
+  <br /><br />
+  <form action="/register/" method="POST">
+    <div>Name: <br /><input type="text" name="name" /><br /><br /></div>
+    <div>Email:<br /><input type="text" name="email" /><br /><br /></div>
+    <div>
+      Password:<br /><input type="password" name="password" /><br /><br />
+    </div>
+    <div>
+      Verify Password:<br /><input
+        type="password"
+        name="verifyPassword"
+      /><br /><br />
+    </div>
+    <div><input type="submit" value="Submit" /></div>
+  </form>
+
+  <br /><br />
+  <a href="/login">Login</a>
+</center>
